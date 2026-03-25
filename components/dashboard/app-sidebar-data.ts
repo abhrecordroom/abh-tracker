@@ -35,11 +35,11 @@ const data = {
       items: [
         {
           title: "New entry",
-          url: "#",
+          url: "/correspondence",
         },
         {
-          title: "Filter",
-          url: "#",
+          title: "Assign Person",
+          url: "/correspondence/cp_table",
         },
         {
           title: "View all",
@@ -54,7 +54,7 @@ const data = {
       items: [
         {
           title: "New complainer",
-          url: "#",
+          url: "/complainer",
         },
         {
           title: "Filter",
@@ -63,7 +63,7 @@ const data = {
       ],
     },
     {
-      title: "Response",
+      title: "Assign",
       url: "#",
       icon: BookOpen,
       items: [
@@ -81,11 +81,11 @@ const data = {
       items: [
         {
           title: "Unit",
-          url: "/dashboard/unit",
+          url: "/unit",
         },
         {
           title: "Designation",
-          url: "#",
+          url: "/designation",
         },
       ],
     },
