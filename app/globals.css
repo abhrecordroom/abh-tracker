@@ -127,3 +127,14 @@
     @apply font-sans;
     }
 }
+
+@layer components {
+    .overview-card {
+        @apply flex flex-col justify-between items-center rounded-xl p-3 aspect-video;
+    }
+
+    .overview-card-counter {
+        @apply text-7xl font-bold drop-shadow-2xl text-gray-800;
+    }
+}
+
