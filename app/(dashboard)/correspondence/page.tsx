@@ -20,11 +20,11 @@ function page() {
     const [date, setDate] = React.useState<Date>()
     const [approvedDate, setApprovedDate] = React.useState<Date>()
   return (
-    <main className='bg-muted/80 w-full md:w-1/3 p-5 ml-5 rounded-md'>
+    <main className='bg-muted/80 w-full md:w-1/3 p-5 ml-5 rounded-md '>
       <header>Correspondence Register</header>
-      <Separator className='my-5' />
+      <Separator className='my-3' />
 
-      <section className='flex flex-col gap-5 '>
+      <section className='flex flex-col gap-5'>
         
         <div>
                 
@@ -110,20 +110,17 @@ function page() {
                         <RadioGroup defaultValue="option-one">
                             <div className="flex items-center gap-3">
                                 <RadioGroupItem value="option-one" id="option-one" />
-                                <Label htmlFor="option-one">Urgent (Within 1 Days)</Label>
+                                <Label htmlFor="option-one">Emergency <span className='text-xs'>(Less than 2 Days)</span></Label>
                             </div>
                             <div className="flex items-center gap-3">
                                 <RadioGroupItem value="option-two" id="option-two" />
-                                <Label htmlFor="option-two">High (Within 3 Days) </Label>
+                                <Label htmlFor="option-two">Urgent <span className='text-xs'>(Within 3-7 Days)</span></Label>
                             </div>
                             <div className="flex items-center gap-3">
                                 <RadioGroupItem value="option-three" id="option-three" />
-                                <Label htmlFor="option-three">Medium (Within 3-7 Days)</Label>
+                                <Label htmlFor="option-three">Not Urgent <span className='text-xs'>(Within 2 Weeks)</span></Label>
                             </div>
-                            <div className="flex items-center gap-3">
-                                <RadioGroupItem value="option-four" id="option-four" />
-                                <Label htmlFor="option-four">Low (Within 14 Days)</Label>
-                            </div>
+                            
                         </RadioGroup>
                     </Field>
 

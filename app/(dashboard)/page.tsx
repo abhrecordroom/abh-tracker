@@ -39,29 +39,31 @@ export default function Page() {
             <div className="aspect-video rounded-xl bg-muted/50" />
             <div className="aspect-video rounded-xl bg-muted/50" />
             <div className="aspect-video rounded-xl bg-muted/50" /> */}
-            <div className="overview-card bg-blue-400">
+            <div className="overview-card bg-linear-to-b from-blue-400 to-blue-600">
               <h1 className="text-xl font-bold">Complaint</h1>
               <h1 className="overview-card-counter">{overview_count.complaint}</h1>
               <Button variant="ghost" size="sm">View details</Button>
             </div>
-            <div className="overview-card bg-yellow-400">
+            <div className="overview-card bg-linear-to-b from-yellow-400 to-orange-500">
               <h1 className="text-xl font-bold">On Process</h1>
               <h1 className="overview-card-counter">{overview_count.on_process}</h1>
               <Button variant="ghost" size="sm">View details</Button>
             </div>
-            <div className="overview-card bg-red-500">
+            <div className="overview-card bg-linear-to-b from-red-400 to-red-600">
               <h1 className="text-xl font-bold">Overdue</h1>
               <h1 className="overview-card-counter">{overview_count.overdue}</h1>
               <Button variant="ghost" size="sm">View details</Button>
             </div>
-            <div className="overview-card bg-green-500">
+            <div className="overview-card bg-linear-to-b from-green-400 to-green-600">
               <h1 className="text-xl font-bold">Completed</h1>
               <h1 className="overview-card-counter">{overview_count.completed}</h1>
               <Button variant="ghost" size="sm">View details</Button>
             </div>
             
           </div>
-          <div className="min-h-[100vh] flex-1 rounded-xl bg-muted/50 md:min-h-min" />
+          <div className="min-h-screen flex-1 rounded-xl bg-muted/50 md:min-h-min p-3">
+              Table
+          </div>
         </div>
       </SidebarInset>
     </SidebarProvider>

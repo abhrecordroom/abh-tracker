@@ -35,7 +35,7 @@ const data = {
       items: [
         {
           title: "New entry",
-          url: "/correspondence",
+          url: "/",
         },
         {
           title: "Assign Person",

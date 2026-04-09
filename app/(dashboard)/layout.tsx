@@ -19,7 +19,9 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
           </div>
         </header>
 
-        {children}
+        <div>
+          {children}
+        </div>
       </main>
     </SidebarProvider>
   );
